@@ -14,6 +14,8 @@ module.exports = {
       poppins: ["Poppins", "sans-serif"],
       roboto: ["Roboto", "sans-serif"],
       noto: ["Noto Sans", "sans-serif"],
+      fira: ["Fira Sans", "sans-serif"],
+      arimo: ["Arimo", "sans-serif"],
     },
     extend: {
       colors: {

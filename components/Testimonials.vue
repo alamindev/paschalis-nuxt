@@ -1,15 +1,16 @@
 <template>
-   <div class="pt-5 md:pt-24 pb-12 sm:bg-[url(~/assets/images/dotted-map.png)] bg-no-repeat bg-cover  ">
+   <div class="testimonials pt-5 md:pt-24 pb-12 sm:bg-[url(~/assets/images/dotted-map.png)] bg-no-repeat bg-cover  ">
         <swiper
         :modules="modules" 
-        :breakpoints="breakpoints" 
+        :breakpoints="{'960':{slidesPerView: 1.5}}" 
         :slides-per-view="1"
         :space-between="20"
         :loop='true'
+        navigation
         :centered-slides="true"
         :pagination="{ clickable: true }"
     >
-        <swiper-slide class="py-20 "  v-slot="{ isActive }">
+        <swiper-slide class="pt-20 pb-64 "  v-slot="{ isActive }">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4" :class="isActive ? 'opacity-100' : 'opacity-25'">
                 <div class="rounded-[24.2px] bg-white p-5 2xl:p-10 shadow-[8px_23px_58px_0_rgba(49,89,211,0.12)]">
                     <div class="w-[86px] -mt-16 mb-6 md:mb-10 bg-brand-green-light h-[86px] rounded-full flex justify-center items-center shadow-[0_11px_46px_0_rgba(181,199,48,0.51)]">
@@ -81,25 +82,19 @@
    </div> 
 </template>
 <script>
- import { Pagination } from 'swiper';
+ import { Pagination,Navigation  } from 'swiper';
 import { Swiper, SwiperSlide  } from 'swiper/vue'; 
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 export default {
     components: {
       Swiper,
       SwiperSlide, 
     },
-    setup() { 
-        let breakpoints = {   
-            960: {
-                slidesPerView: 1.5,
-                spaceBetween: 20
-            }, 
-        }
+    setup() {  
       return { 
-          modules: [Pagination],
-        breakpoints
+        modules: [Pagination, Navigation], 
       };
     },
   };

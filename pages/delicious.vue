@@ -127,17 +127,37 @@
     </div>
   </section>
   
-  <section class="pt-56 md:pt-72">
+  <section class="pt-56 md:pt-72 ">
     <div class="container mx-auto">
         <div class="w-[960px] mx-auto max-w-full md:pb-14 md:px-0">
           <h3 class="text-[90px] hidden sm:block font-semibold text-brand-dark-100 opacity-5 leading-3 text-center">Testimonials</h3>
           <h2 class="font-roboto text-[23px] sm:text-[27px] text-center  md:text-[32px] xl:text-[45px] font-semibold leading-[1.3] pb-2 text-brand-red-40 md:text-brand-dark-100">Testimonials</h2>   
         </div> 
-    </div>
- 
-    <Testimonials/>
+    </div> 
+    <LazyTestimonials/>
   </section>
-  
+  <section class="pt-44 px-4 md:pt-64 -mt-40 md:-mt-32 pb-20 bg-[url(~/assets/images/bg-accordion.svg)] bg-no-repeat bg-top-center">
+     <div class="container mx-auto">
+        <div class="mx-auto pb-8"> 
+          <h2 class="text-[30px] md:text-[60px] text-center font-semibold text-brand-dark-100">FAQ</h2>   
+        </div> 
+        <LazyAccordion/>
+    </div> 
+  </section>
+  <section class="pb-5 sm:py-20 px-4">
+    <div class="container mx-auto">
+        <div class="bg-[url(~/assets/images/ready-start-bg-mobile.svg)] sm:bg-[url(~/assets/images/ready-start-bg.svg)] bg-cover xl:bg-contain bg-top-center bg-no-repeat px-10 pt-12 pb-24 sm:pb-64">
+          <div class="w-[630px] mx-auto max-w-full">
+            <h2 class="font-roboto text-center font-bold text-white text-[25px] md:text-[40px] lg:text-[53px] pb-4">READY TO START?</h2>
+            <p class="font-roboto text-center text-[22px] text-white md:text-[26px] font-bold pb-6">Sign up and start setting your QR menus today.</p>
+            <div class="flex sm:items-stretch flex-col items-center gap-2 sm:gap-0  sm:flex-row">
+              <input type="text" class="sm:-mr-2 rounded-lg w-full px-5 py-3 text-[17.50px] placeholder:text-[#2C373E] placeholder:text-opacity-75 text-brand-dark-100" placeholder="Your brand’s name...">
+              <button type="button" class="shrink-0 w-[160px] sm:w-[180px] h-[60px] sm:h-[70px] flex justify-center items-center text-white bg-[#393939] font-semibold font-noto rounded-lg" >Go!</button>
+            </div>
+          </div>
+        </div>
+    </div> 
+  </section>
 </template>
 
 <script>

@@ -7,5 +7,34 @@
     @apply font-poppins font-normal
   }
 }
+@layer utilities{
+  .testimonials .swiper-button-prev {
+    @apply !left-[2%] md:!left-[16%] right-auto  z-20
+  }
+  .testimonials .swiper-button-next  { 
+    @apply left-auto !right-[2%] md:!right-[16%]  z-20
+  }
+  .testimonials  .swiper-button-next, .swiper-button-prev { 
+    bottom: 90px; 
+    top: auto !important; 
+    @apply flex justify-center items-center !w-[60px] !h-[60px] md:!w-[82px] md:!h-[82px] rounded-full bg-white shadow-[14px_41px_100px_0_rgba(41,74,177,.26)]
+  }
+  .testimonials .swiper-button-next::after, .testimonials .swiper-button-prev::after { 
+      font-size: 18px; 
+    }
+  .testimonials .swiper-pagination { 
+      @apply !bottom-[110px]  z-10
+    }
+   .testimonials .swiper-pagination-bullet { 
+      width: 30px !important;
+      height: 8px !important;  
+      border-radius: 30px !important; 
+      background: #092853 !important; 
+      opacity: 0.5 !important;
+    }
+   .testimonials .swiper-pagination-bullet-active{ 
+      @apply !bg-brand-green-light
+    }
+}
 
  
