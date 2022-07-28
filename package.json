@@ -8,15 +8,12 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.0",
+    "@vueuse/core": "^9.0.0",
+    "@vueuse/nuxt": "^9.0.0",
     "nuxt": "3.0.0-rc.6"
   },
   "dependencies": {
     "@headlessui/vue": "^1.6.7",
-    "swiper": "^8.3.1",
-    "typeface-arimo": "^1.1.13",
-    "typeface-fira-sans": "^1.1.13",
-    "typeface-noto-sans": "^1.1.13",
-    "typeface-poppins": "^1.1.13",
-    "typeface-roboto": "^1.1.13"
+    "swiper": "^8.3.1"
   }
 }

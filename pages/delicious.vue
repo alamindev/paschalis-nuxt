@@ -81,7 +81,7 @@
       </div>
     </div>
   </section>
-  <section class="px-4 pb-16 pt-14 sm:pt-20">
+  <section class="px-4 pb-16 -mb-20 md:-mb-0 pt-14 sm:pt-20">
     <div class="container mx-auto">
        <div class="w-[960px] mx-auto max-w-full">
           <h2 class="font-roboto text-[23px] sm:text-[27px] text-center  md:text-[32px] xl:text-[45px] font-semibold leading-[1.3] pb-2 text-brand-red-40">Build QR menus in minutes</h2>
@@ -113,17 +113,17 @@
        </div>
     </div>
   </section> 
-  <section class="-mb-32 pt-32 lg:pt-40 xl:pt-56 bg-[url(~/assets/images/bg-info-price.svg)] bg-no-repeat bg-cover  bg-top-center">
+  <section class="-mb-32 pt-56 lg:pt-40 xl:pt-56 bg-[url(~/assets/images/bg-info-price.svg)] bg-no-repeat bg-cover  bg-top-center">
     <div class="container mx-auto">
         <div class="w-[960px] mx-auto max-w-full pb-14 md:px-0">
           <h2 class="font-roboto text-[23px] sm:text-[27px] text-center  md:text-[32px] xl:text-[45px] font-semibold leading-[1.3] pb-2 text-brand-red-40">Features</h2> 
           <p class="text-[13px] sm:text-[18px] text-center lg:text-[20px] leading-[1.5] text-black font-normal font-noto">Why do you need to have a Delicious dynamic QR code menu?</p> 
         </div>
         <div class="pb-10 px-4 md:px-0">
-          <InfoBoxDesktop class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-5"/>
-          <InfoBoxMobile class="sm:hidden"/>
+          <LazyDeliciousInfoBoxDesktop class="hidden sm:grid grid-cols-2 lg:grid-cols-4 gap-5"/>
+          <LazyDeliciousInfoBoxMobile class="sm:hidden"/>
         </div>
-        <PriceBox/>
+        <LazyDeliciousPriceBox/>
     </div>
   </section>
   
@@ -134,14 +134,14 @@
           <h2 class="font-roboto text-[23px] sm:text-[27px] text-center  md:text-[32px] xl:text-[45px] font-semibold leading-[1.3] pb-2 text-brand-red-40 md:text-brand-dark-100">Testimonials</h2>   
         </div> 
     </div> 
-    <LazyTestimonials/>
+    <LazyDeliciousTestimonials/>
   </section>
   <section class="pt-44 px-4 md:pt-64 -mt-40 md:-mt-32 pb-20 bg-[url(~/assets/images/bg-accordion.svg)] bg-no-repeat bg-top-center">
      <div class="container mx-auto">
         <div class="mx-auto pb-8"> 
           <h2 class="text-[30px] md:text-[60px] text-center font-semibold text-brand-dark-100">FAQ</h2>   
         </div> 
-        <LazyAccordion/>
+        <LazyDeliciousAccordion/>
     </div> 
   </section>
   <section class="pb-5 sm:py-20 px-4">
@@ -163,5 +163,16 @@
 <script>
 definePageMeta({
   layout: "delicious",
-});
+});export default {
+  head: {
+    title: 'Delicious',
+    meta: [ 
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Build up your premium, digital and responsive restaurant menu in minutes.'
+      }
+    ] 
+  }
+}
 </script>

@@ -8,6 +8,11 @@
   }
 }
 @layer utilities{
+
+  .feature--card{
+    background: linear-gradient(143deg, rgba(219,230,255,1) 0%, rgba(217,237,255,1) 49%, rgba(230,244,255,1) 100%)
+  }
+
   .testimonials .swiper-button-prev {
     @apply !left-[2%] md:!left-[16%] right-auto  z-20
   }
@@ -35,6 +40,60 @@
    .testimonials .swiper-pagination-bullet-active{ 
       @apply !bg-brand-green-light
     }
+
+    .border-gradient { 
+      @apply relative before:absolute before:inset-0 before:z-[-1] before:-m-[4px] before:rounded-full before:bg-gradient-to-tr before:from-[#0072FF] before:to-[#00C6FF]
+    } 
+    .border-gradient-two{
+       @apply relative before:absolute before:inset-0 before:z-[-1] before:-m-[2px] before:rounded-full before:bg-gradient-to-tr before:from-[#05D2C9] before:to-[#0441C8]
+    }
+
+    
+.range-slider {
+ @apply w-full
 }
 
+ 
+.range-slider__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+    border: 4px solid #fff;
+     outline: 5px solid rgba(255,255,255,0.60);
+  background: #1189FF;
+  cursor: pointer;
+  -webkit-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+  
+.range-slider__range::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border: 4px solid #fff;
+  outline: 5px solid rgba(255,255,255,0.60);
+  border-radius: 50%;
+  background: #1189FF;
+  cursor: pointer;
+  -moz-transition: background 0.15s ease-in-out;
+  transition: background 0.15s ease-in-out;
+}
+   
+    
+}
+.marketing--card .swiper-horizontal > .swiper-pagination-bullets, 
+.boost--card .swiper-horizontal > .swiper-pagination-bullets{
+  bottom: 10px;
+}
+.marketing--card .swiper-pagination-bullet,
+.boost--card .swiper-pagination-bullet{
+        width: 15px !important;
+        height: 15px !important;  
+     }
+ 
+.marketing--card .swiper-pagination-bullet.swiper-pagination-bullet-active,
+.boost--card .swiper-pagination-bullet.swiper-pagination-bullet-active{
+      background-color: #0189FF !important;
+  }
  

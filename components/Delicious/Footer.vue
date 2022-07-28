@@ -1,5 +1,5 @@
 <template>
- <footer  class="px-4 font-fira -mt-32 bg-[url(~/assets/images/footer-bg.svg)] bg-cover  bg-top-center bg-no-repeat pt-40">
+ <footer  class="px-4 font-fira -mt-32 bg-[url(~/assets/images/footer-bg.svg)] bg-cover  bg-top-center bg-no-repeat pt-56 sm:pt-40">
     <div class="container mx-auto">
         <div class="flex lg:gap-5 gap-y-14 2xl:gap-14 flex-wrap lg:flex-nowrap py-5 sm:py-20">
             <div class="order-1 sm:w-6/12 lg:w-3/12 sm:pr-6 xl:pr-14 flex flex-col items-center justify-center sm:block">
