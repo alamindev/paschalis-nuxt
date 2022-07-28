@@ -124,7 +124,7 @@ It enables you to easily maintain the hygiene of your data and ensure the consis
         </div>
    </section> 
      <!-- start coding for How it works area-->
-   <section class="pb-20 px-4 md:pb-24 pt-80 -mt-72 sm:bg-[url(~/assets/images/verifier/bg-3.png)] bg-no-repeat  bg-left-top">
+   <section class="pb-20 px-4 md:pb-24 pt-64 sm:pt-80 -mt-72 sm:bg-[url(~/assets/images/verifier/bg-3.png)] bg-no-repeat  bg-left-top">
         <div class="container mx-auto">
             <div class="flex items-center flex-col gap-8 lg:flex-row">
                 <div class="lg:w-[350px] xl:w-[450px] max-w-full shrink-0">
